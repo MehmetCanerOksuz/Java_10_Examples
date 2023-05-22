@@ -1,0 +1,26 @@
+package com.bilgeadam.lesson004;
+/*
+ * 
+ * Soru4-)  1 den 100 e kadar çift sayıların toplamının tek sayıların toplamına oranı..
+ */
+
+public class Question19 {
+	
+	public static void main(String[] args) {
+		
+		double toplamTek=0,toplamCift=0;
+		for(int i=1; i<=100; i++) {
+			
+			if(i%2==0) {
+				toplamCift+=i;
+			}else {
+				toplamTek+=i;
+			}
+		}
+		
+		System.out.println("Çiftlerin toplamı : " + toplamCift);
+		System.out.println("Teklerin toplamı : " + toplamTek);
+		System.out.println("toplamCift/toplamTek = " +(toplamCift/toplamTek));
+	}
+
+}
