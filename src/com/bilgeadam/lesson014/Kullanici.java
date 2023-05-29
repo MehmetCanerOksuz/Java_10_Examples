@@ -60,6 +60,13 @@ public class Kullanici {
 	public void setSepet(Sepet sepet) {
 		this.sepet = sepet;
 	}
+
+	@Override
+	public String toString() {
+		return "Kullanici [id=" + id + ", username=" + username + ", sifre=" + sifre + ", isim=" + isim + ", sepet="
+				+ sepet + "]";
+	}
+	
 	
 		
 	

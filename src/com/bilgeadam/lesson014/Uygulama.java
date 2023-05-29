@@ -24,8 +24,6 @@ public class Uygulama {
 	Scanner scanner = new Scanner(System.in);
 
 	public void kayitOl() {
-		System.out.println("Lütfen id girişi yapınız.");
-		int id = scanner.nextInt();
 		System.out.println("Lütfen username girişi yapınız.");
 		String username = scanner.next();
 		System.out.println("Lütfen sifre girişi yapınız.");
@@ -33,9 +31,9 @@ public class Uygulama {
 		System.out.println("Lütfen isim girişi yapınız.");
 		String isim = scanner.next();
 
-		Kullanici kullanici = new Kullanici(id, username, sifre, isim);
-		Database.kullaniciListesi[Database.index] = kullanici;
-		Database.index++;
+		Kullanici kullanici = new Kullanici(Database.index +1, username, sifre, isim);
+		Database.kullaniciEkle(kullanici);
+		
 
 	}
 

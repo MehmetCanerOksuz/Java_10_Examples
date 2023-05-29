@@ -1,5 +1,7 @@
 package com.bilgeadam.lesson014;
 
+import java.util.Arrays;
+
 public class Sepet {
 	
 	private EUrun[] urunler;
@@ -23,6 +25,11 @@ public class Sepet {
 
 	public void setTotalPrice(double totalPrice) {
 		this.totalPrice = totalPrice;
+	}
+
+	@Override
+	public String toString() {
+		return "Sepet [urunler=" + Arrays.toString(urunler) + ", totalPrice=" + totalPrice + "]";
 	}
 	
 	

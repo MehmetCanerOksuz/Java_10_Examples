@@ -22,7 +22,6 @@ public class Test {
 //			}
 //		}
 		
-		
 		Uygulama uygulama = new Uygulama();
 		uygulama.uygumalaGiris();
 	}
