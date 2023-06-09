@@ -21,9 +21,15 @@ public class SetOrnek {
 		
 		SetOrnek setOrnek = new SetOrnek();
 		
-		setOrnek.kategoriEkle("Anime");
 		setOrnek.kategoriEkle("Drama");
 		setOrnek.kategoriEkle("Anime");
+		setOrnek.kategoriEkle("Komedi");
+		setOrnek.kategoriEkle("Gerilim");
+		setOrnek.kategoriEkle("Gerilim");
+		
+
+		
+		
 		
 		for (String string : setOrnek.kategoriler) {
 			System.out.println(string);
