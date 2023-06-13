@@ -73,7 +73,7 @@ public class Uygulama {
 		
 //		System.out.println(uygulama.yukOlustur()); 
 		
-		uygulama.yukKabulu(uygulama);
+		uygulama.yukKabulu();
 		
 		System.out.println(Arrays.toString(uygulama.liman.getYukler()));
 		System.out.println("Program devam ediyor..");
